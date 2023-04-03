@@ -1,11 +1,12 @@
 <template>
   <div class="container">
-    <div class="header">
+  <div class="content-wrapper">
+    <div class="q-pa-md q-gutter-md">
 
-    </div>
-    <div class="titleText">
-    <h1>Zoznam videí určených pre rehabilitáciu ľudí po cievnej mozgovej príhode</h1>
-  </div>
+      <q-banner class="banner q-mb-lg">
+        <div class="text-h5">Zoznam videí určených pre rehabilitáciu ľudí po cievnej mozgovej príhode.</div>
+      </q-banner>
+
   <div class="q-pa-md" style="width: 300px">
     <div class="q-gutter-md">
 
@@ -50,7 +51,8 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> </div>
+      </div>
   </div>
 </template>
 
@@ -78,7 +80,18 @@ export default {
 
   background-color: #f2f2f2;
 }
-
+.content-wrapper {
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+.banner {
+  background-color: #c36836;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 .header {
   text-align: center;
   margin-bottom: 40px;

@@ -4,7 +4,7 @@
 
     </div>
     <div class="content q-my-lg-xl">
-      <div class="card">
+      <div class="card" v-on:click="goTo('informations')">
         <div class="card-image">
           <img src="~assets/img/knowledge.jpg" alt="Information" />
         </div>
@@ -15,7 +15,7 @@
           </p>
         </div>
       </div>
-      <div class="card">
+      <div class="card" v-on:click="goTo('videos')">
         <div class="card-image">
           <img src="~assets/img/physiotherapy.jpg" alt="My Portfolio" />
         </div>
@@ -26,7 +26,7 @@
           </p>
         </div>
       </div>
-      <div class="card">
+      <div class="card" v-on:click="goTo('games')">
         <div class="card-image">
           <img src="~assets/img/games.jpg" alt="About Me" />
         </div>
@@ -41,23 +41,15 @@
   </div>
 </template>
 
-<script>
-import { reactive } from 'vue'
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
 
-export default {
-  name: 'MainPage',
-  setup () {
-    const state = reactive({
-      // state properties here
-    })
+const router = useRouter()
 
-    return {
-      ...state
-    }
-  }
+function goTo (to: string) {
+  router.push({ name: to })
 }
 </script>
-
 <style>
 .container {
   display: flex;

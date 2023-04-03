@@ -1,15 +1,9 @@
 <script setup lang="ts">
 import {
   TheDropDownNavbar,
-  TheDropDownMenu,
-  TheDropDownItem,
-  TheDropDownDivideBlock
+  TheDropDownItem
 } from 'vue3-dropdown-navbar'
 import { ref } from 'vue'
-const dropdownMenu = ref<InstanceType<typeof TheDropDownMenu>>()
-const toggleDarkMode = () => {
-  document.documentElement.classList.toggle('dd-nav-dark')
-}
 const logged = ref(true)
 </script>
 
@@ -28,13 +22,13 @@ const logged = ref(true)
     </template>
 
     <TheDropDownItem link="/">Domovská stránka</TheDropDownItem>
-    <TheDropDownItem link="informations">Informácie</TheDropDownItem>
+    <TheDropDownItem link="/informations">Informácie</TheDropDownItem>
     <TheDropDownItem link="/videos">Videá</TheDropDownItem>
-    <TheDropDownItem link="games">Hry</TheDropDownItem>
+    <TheDropDownItem link="/games">Hry</TheDropDownItem>
 
     <div>
       <div v-if="logged">
-    <TheDropDownItem link="/ login">Prihlásenie sa</TheDropDownItem>
+    <TheDropDownItem link="/login">Prihlásenie sa</TheDropDownItem>
   </div>
   </div>
   </TheDropDownNavbar>
