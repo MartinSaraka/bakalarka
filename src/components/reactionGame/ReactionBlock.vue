@@ -1,5 +1,5 @@
 <template>
-  <div class="block" v-if="showBlock" @click="stopTimer">
+  <div class="block_reaction" v-if="showBlock" @click="stopTimer">
     Stlač ma
   </div>
 </template>
@@ -34,8 +34,8 @@ export default {
 }
 </script>
 
-<style>
-    .block {
+<style scoped>
+    .block_reaction {
         width: 400px;
         border-radius: 20px;
         background: #0faf87;

@@ -8,10 +8,10 @@
         <div class="text-h5">Zoznam hier určených pre rehabilitáciu ľudí po cievnej mozgovej príhode.</div>
       </q-banner>
   <div class="q-pa-md" style="width: 300px">
-    <div class="q-gutter-md">
+    <!-- <div class="q-gutter-md">
 
       <q-select filled v-model="model" :options="options" label="Vyfiltrujte si hry podľa zamerania" />
-      </div>
+      </div> -->
       </div>
     <div class="content q-my-lg-xl">
 
@@ -20,10 +20,11 @@
           <img src="~assets/img/games.jpg" alt="Hra1" />
         </div>
         <div class="card-content">
+          <h2 class="card_game">Pexeso</h2>
           <h2 class="card-title">Zameranie: pamäť</h2>
           <h4 class="card-title">Obtiažnosť : stredná</h4>
           <p class="card-text">
-            Stredne obtiažná hra zameraná na pamäť.
+            Pexeso - Stredne obtiažná hra zameraná na pamäť.
           </p>
         </div>
       </div>
@@ -39,7 +40,7 @@
           </p>
         </div>
       </div>
-      <div class="card" v-on:click="goTo('reactionGame')">
+      <div class="card" v-on:click="goTo('differenceGame')">
         <div class="card-image">
           <img src="~assets/img/games.jpg" alt="Hra3" />
         </div>
@@ -47,7 +48,7 @@
           <h2 class="card-title">Zameranie: všímavosť</h2>
           <h4 class="card-title">Obtiažnosť : stredná</h4>
           <p class="card-text">
-            Stredne obtiažná hra zameraná na všímavosť.
+            Nájdi rozdiely - Stredne obtiažná hra zameraná na všímavosť.
           </p>
         </div>
       </div>
@@ -184,6 +185,10 @@ padding: 20px;
 .card-title {
 font-size: 24px;
 margin-bottom: 20px;
+color: #333;
+}
+.card_game {
+font-size: 24px;
 color: #333;
 }
 

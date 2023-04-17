@@ -7,12 +7,10 @@
   <div class="app">
 
     <q-banner class="banner q-mb-lg">
-        <div class="text-h5">Jednoduchá hra na precvičenie reakcií !</div>
+        <div class="text-h5">Jednoduchá hra na precvičenie všímavosti !</div>
       </q-banner>
-  <h2 class="textSize1">Reakčný časovač, otestuj si svoje reakcie, stlač čo najrýchlejšie na štvorec, ktorý sa objaví určitý čas po stlačení tlačítka hrať</h2>
-  <button class="button_reaction" @click="start" :disabled="isPlaying" >Hrať</button>
-  <Block v-if="isPlaying" :dealy="delay" @end="endgame" />
-  <Results v-if="showResults" :score="score" />
+  <h2 class="textSize1">Nájdi 7 rozdielov</h2>
+  <SpotTheDifference  />
 </div>
 </div>
 </div>
@@ -23,29 +21,13 @@
 
 <script>
 
-import Block from 'src/components/reactionGame/ReactionBlock.vue'
-import Results from 'src/components/reactionGame/ReactionResults.vue'
+import SpotTheDifference from 'src/components/differenceGame/SpotDifference.vue'
 export default {
   name: 'App',
-  components: { Block, Results },
+  components: { SpotTheDifference },
   data () {
     return {
-      isPlaying: false,
-      delay: null,
-      score: null,
-      showResults: false
-    }
-  },
-  methods: {
-    start () {
-      this.delay = 2000 + Math.random() * 5000
-      this.isPlaying = true
-      this.showResults = false
-    },
-    endgame (reactionTime) {
-      this.score = reactionTime
-      this.isPlaying = false
-      this.showResults = true
+
     }
   }
 }

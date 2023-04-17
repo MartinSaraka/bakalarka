@@ -33,6 +33,11 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/MemoryGamePage.vue')
       },
       {
+        path: 'differenceGame',
+        name: 'differenceGame',
+        component: () => import('pages/SpotDifferencePage.vue')
+      },
+      {
         path: 'informations',
         name: 'informations',
         component: () => import('pages/InformationPage.vue')

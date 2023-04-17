@@ -8,56 +8,79 @@
       </q-banner>
 
   <div class="q-pa-md" style="width: 300px">
-    <div class="q-gutter-md">
+    <!-- <div class="q-gutter-md">
 
       <q-select filled v-model="model" :options="options" label="Vyfiltrujte si cvičenia podľa seba" />
+      </div> -->
       </div>
-      </div>
+
     <div class="content q-my-lg-xl">
 
       <div class="card">
-        <div class="card-image">
-          <img src="~assets/img/physiotherapy.jpg" alt="Information" />
-        </div>
-        <div class="card-content">
-          <h2 class="card-title">Cvičenie nohy</h2>
-          <h4 class="card-title">Obtiažnosť : stredná</h4>
-          <p class="card-text">
-            Stredne obtiažné cvičenie noh pre zlepšenie mobility. Dĺžka videa 5 minút.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-image">
-          <img src="~assets/img/physiotherapy.jpg" alt="My Portfolio" />
-        </div>
-        <div class="card-content">
-          <h2 class="card-title">Cvičenie Chrbat</h2>
-          <h4 class="card-title">Obtiažnosť : ľahká</h4>
-          <p class="card-text">
-            Ľahké cvičenie určené pre oblasŤ chrbta pre zlepšenie mobility. Dĺžka videa 5 minút.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-image">
-          <img src="~assets/img/physiotherapy.jpg" alt="About Me" />
-        </div>
+        <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/Ar2DS5A3rlM"
+        title="YouTube video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
         <div class="card-content">
           <h2 class="card-title">Cvičenie ruky</h2>
           <h4 class="card-title">Obtiažnosť : stredná</h4>
           <p class="card-text">
-            Stredne obtiažné cvičenie ŕuk pre zlepšenie mobility. Dĺžka videa 5 minút.
+            Stredne obtiažné rehabilitačné cvičenie spodnej časti ruky pre zlepšenie mobility. Dĺžka videa cca 3 minúty.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+
+      <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/C47rsicV3Zk"
+        title="YouTube video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+        <div class="card-content">
+          <h2 class="card-title">Cvičenie nohy</h2>
+          <h4 class="card-title">Obtiažnosť : stredná</h4>
+          <p class="card-text">
+            Stredne obtiažné rehabilitačné cvičenie nôh pre zlepšenie mobility. Dĺžka videa cca 3 minúty.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/3hTA0-9efiA"
+        title="YouTube video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+        <div class="card-content">
+          <h2 class="card-title">Cvičenie ruky/rameno</h2>
+          <h4 class="card-title">Obtiažnosť : Ľahká</h4>
+          <p class="card-text">
+            Rehabilitačné cvičenie ramenného kĺbu zamerané pre zlepšenie mobility. Dĺžka videa cca 3 minúty.
           </p>
         </div>
       </div>
     </div> </div>
       </div>
+
   </div>
+
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 export default {
   setup () {

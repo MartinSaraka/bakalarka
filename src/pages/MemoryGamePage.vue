@@ -1,11 +1,8 @@
 <template>
   <div id="app" class="app memoryGame">
     <div class="toolbar">
-      <button @click="askMotionPermission" class="btn">
-        Enable motion
-      </button>
       <button @click="reset" class="btn">
-        Reset game
+        Reštartovať hru
       </button>
 
     <ScoreBoard
@@ -199,13 +196,13 @@ export default {
 .btn {
   appearance: none;
   background: transparent;
-  border: 2px solid white;
-  color: white;
-  font: 11px / 1 arial;
+  border: 2px solid black;
+  color: black;
+  font: 26px  arial;
   letter-spacing: 0.3px;
   padding: 4px 12px;
-  height: 24px;
-  border-radius: 12px;
+  height: 40px;
+  border-radius: 20px;
 }
 .btn:active {
   color: black;
